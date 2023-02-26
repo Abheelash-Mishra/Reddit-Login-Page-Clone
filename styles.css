@@ -18,7 +18,6 @@ body{
     font-weight: 400;
     /* font-family: 'Open Sans', sans-serif; */
     background-color: #ffffff;
-
     background-image: url(./assets/bg.png);
     height: 100vh;
     background-repeat: no-repeat;
@@ -97,27 +96,6 @@ img {
     font-weight: bold;
 }
 
-/* #separator {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-}
-
-#separator::before, #separator::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid gray;
-}
-
-#separator:not(:empty)::before {
-    margin-right: 0.5em;
-}
-
-#separator:not(:empty)::after {
-    margin-left: 0.5em;
-} */
-
 label > p {
     font-size: 18px;
 }
@@ -127,11 +105,12 @@ label > p {
 } 
 
 input {
-    
-    padding: 18px 88px;
+    width: 100%;
+    padding: 18px;
     border: 1px solid rgb(149, 115, 228);
     border-radius: 5px;
     background-color: #cee5f7;
+    margin: 10px 0;
 }
 
 #login {
@@ -153,4 +132,42 @@ input {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-style: bold;
+}
+
+@media (max-width: 440px){
+    * {
+        font-size: 14px;
+
+    }
+
+    body {
+        width: 70%;
+    }
+
+    .main_container {
+        width: 90%;
+    }
+
+    .ContinueButtons {
+        font-size: 14px;
+    }
+
+    .CntText {
+        font-size: 12px;
+    }
+
+    .divider::before,
+    .divider::after {
+        padding: 0 30px;
+    }
+
+    input {
+        width: 100%;
+        padding: 14px;
+        margin: 8px 0;
+    }
+
+    #login {
+        font-size: 16px;
+    }
 }
